@@ -1,1 +1,4 @@
+docker pull swift
 docker container run -it --rm --name swiftfun -v $PWD:/swiftsrc swifts
+
+docker run --privileged --cap-add sys_ptrace -it --rm swift swift
